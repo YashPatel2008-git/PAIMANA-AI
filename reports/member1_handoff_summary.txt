@@ -1,0 +1,64 @@
+ 
+======================================================== 
+PAIMANA-AI - MEMBER 1 DATA HANDOFF 
+======================================================== 
+ROLE: Member 1 - Data Engineering PURPOSE: This document provides the cleaned and ML-ready datasets to the machine-learning/model-development team. 
+======================================================== 
+DATA SUMMARY 
+======================================================== 
+Project Master Rows: 
+3580 
+Project Master Columns: 
+28 
+ML Predictor Rows: 
+3580 
+ML Predictor Columns: 
+11 
+ML Target Rows: 
+3580 
+ML Target Columns: 
+4 
+======================================================== 
+FILES HANDED TO MEMBER 2 
+======================================================== 
+1. data/processed/member1_ml_predictors.csv   
+Contains model input/features. 
+
+2. data/processed/member1_ml_targets.csv   
+Contains prediction targets. 
+
+3. reports/member1_feature_dictionary.csv Describes the features and targets. 
+
+4. reports/member1_data_quality.csv   
+Contains missing-value/data-quality information. 
+======================================================== 
+PREDICTION TARGETS 
+======================================================== 
+Cost Overrun: COST_OVERRUN_PCT Schedule Change: 
+SCHEDULE_CHANGE_DAYS Delay Classification: DELAY_INDICATOR 
+======================================================== 
+IMPORTANT ML RULE 
+======================================================== 
+
+Member 2 must NOT use target variables as input features. The following are targets/outcomes:- 
+COST_OVERRUN_PCT- SCHEDULE_CHANGE_DAYS- DELAY_INDICATOR 
+They must be kept separate from the predictor dataset. 
+
+======================================================== 
+DATA QUALITY 
+======================================================== 
+Exact duplicate rows: 0 
+Project-month duplicate rows: Columns unavailable 
+
+======================================================== 
+MEMBER 1 STATUS 
+======================================================== 
+The data collection, cleaning, feature engineering, ML dataset preparation and EDA-support stages have been completed. 
+Remaining work belongs to the ML/model-development stage, including model training, validation, comparison and
+prediction.
+
+ ======================================================== 
+ HANDOFF 
+ ======================================================== 
+ Member 1 -> Cleaned/ML-ready data -> 
+ Member 2 
